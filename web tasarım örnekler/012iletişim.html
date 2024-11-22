@@ -15,6 +15,8 @@
         
         a:visited{text-decoration: none;color: darkblue;}
         a{text-decoration: none;color: turquoise;}
+        .white{background-color: white;}
+        .whitesmoke{background-color: whitesmoke;}
         .aliceBlue{background-color: aliceblue; color: black;}
         .skyblue{background-color: skyblue;color: darkblue;text-align: center; padding-top: 70px;}
         .lightYellow{background-color: lightyellow;color: black;}
@@ -38,14 +40,45 @@
         .navigationColor:hover a{color: white;}
         .navigationColor:hover a:visited{color: white;}
         .yellowGreen{background-color: yellowgreen;color: navy;}
-        
+        .hKucukAralik{height: 20px;}
+        .hBuyukAralik{height: 100px;}
         .aralık{margin-top: 100px;}
         .block{display: block;}
         
     </style>
 </head>
-<body  class="aliceBlue">
-    <div class="container">
+
+<script>
+
+
+
+   
+    function boslukAyarlama(){
+        setInterval(() => {
+                  
+            genislik= document.body.clientWidth;
+
+   //alert('genişli:'+genislik);
+if(genislik<768){
+
+    document.getElementById('aralik').classList.add('hBuyukAralik');
+    document.getElementById('aralik').classList.remove('hKucukAralik');
+}
+else {
+    document.getElementById('aralik').classList.remove('hBuyukAralik');
+    document.getElementById('aralik').classList.add('hKucukAralik');
+}          
+        }, 2000);
+
+    }
+
+    
+</script>
+
+<body onload="boslukAyarlama()" id="body" class="white">
+
+
+    <div class="container whitesmoke">
 
         <!--başlık kısm -->
 
@@ -82,9 +115,8 @@
 
 <!-- aradaki boşluğu ayarlama çabası -->
        
-
- <!--aralık clası yerine burya bi tane daha div atıp rengini satırın arka planıyla eşit yaparsak ve media etiketinden ekranın  genişliğine göte bu divin yükseklüğü değişirse aradaki bşuk da respsive lur canıı  -->
-        <div id="post" class="row aralık cornFlowerBlue p-3 bosluk ">
+<div id="aralik" class="row whitesmoke hKucukAralik"></div>
+        <div id="post" class="row  cornFlowerBlue p-3 bosluk ">
             <div class="col p-3 lightYellow">
                 <a 
                     href="https://www.instagram.com/ahmet__esat74/"target="_blank"  >
