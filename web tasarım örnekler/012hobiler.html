@@ -13,14 +13,20 @@
         
         
         #ahmet_foto{
-            
+            margin-top: 15px;
+            padding-top:0px ;
             float: left; 
-            width: 100px; 
+            width: 120px; 
             height: 150px;
             border-radius: 10%;
-            display: inline-block; 
-            margin-top:10px ;
+            display: block; 
+            
+           
         }
+        
+        .white{background-color: white;}
+        .whitesmoke{background-color: whitesmoke;}
+        .whitesmoke:hover{background-color: rgb(220, 230, 230); }
         a:visited{text-decoration: none;color: darkblue;}
         a{text-decoration: none;color: turquoise;}
         .aliceBlue{background-color: aliceblue; color: black;}
@@ -29,7 +35,7 @@
         .lightYellow:hover{background-color: lightgoldenrodyellow;}
         .cornFlowerBlue{background-color: lightblue}
         .m5{margin: 5px;}
-        .border{border: 3px solid black;border-radius: 15px; }
+        .border{border-radius: 5px; }
         .h40{height: 33px;}
         .h100{height: 100px;}
         .h300{height: 300px;}
@@ -45,21 +51,52 @@
         .navigationColor a:visited{color: white;}
         .navigationColor:hover a{color: white;}
         .navigationColor:hover a:visited{color: white;}
+        .hKucukAralik{height: 20px;}
+        .hBuyukAralik{height: 100px;}
         .yellowGreen{background-color: yellowgreen;color: navy;} 
         .aralık{margin-top: 100px;}
         .block{display: block;}
        
     </style>
 </head>
-<body>
+<body onload="boslukAyarlama()" class="white">
+    <script>
+
+
+
+   
+        function boslukAyarlama(){
+            setInterval(() => {
+                      
+                genislik= document.body.clientWidth;
     
-     <div class="container">
+       //alert('genişli:'+genislik);
+    if(genislik<768){
+    
+        document.getElementById('aralik').classList.add('hBuyukAralik');
+        document.getElementById('aralik').classList.remove('hKucukAralik');
+        document.getElementById('ahmet_foto').style.marginTop=100+"px";
+        
+    }
+    else {
+        document.getElementById('aralik').classList.remove('hBuyukAralik');
+        document.getElementById('aralik').classList.add('hKucukAralik');
+        document.getElementById('ahmet_foto').style.marginTop=15+"px"
+        
+    }          
+            }, 2000);
+    
+        }
+    
+        
+    </script>
+    <div class="container  whitesmoke">
          <!-- başlık kısmı-->
-         <span class="row  skyblue h200">
-            <h1> Öz Geçmiş </h1>
-            <h5 class="txtleft">Ahmet Esat Altunsoy</h5>
+            <span class="row  skyblue h200">
+             <h1> Öz Geçmiş </h1>
+             <h5 class="txtleft">Ahmet Esat Altunsoy</h5>
                   
-        </span>
+             </span>
          <!-- Navigation Menüsü -->
         <div class="row  h40">
 
@@ -80,31 +117,37 @@
             </span>
         
         </div>
+
+        <!-- boşluk ayarlama div'i -->
+        <div id="aralik" class="row  hKucukAralik"></div>
         <!-- içerik kısmı -->
-
-        <div id="post" class="row aralık cornFlowerBlue p-3 bosluk ">
-            <div class="col-md-12 p-3 lightYellow">
-                <h4 class="txtcenter"> Ahmet Esat Altunsoy</h4>
-                   
-                     <img id="ahmet_foto"  src="Images/AhmetEsatfoto.jpg" alt="Ahmet Esat Altunsoy">     
-                   
-                   
-                   
-                       <p style=" margin-left: 115px; word-wrap: normal;">
+        <div style="padding: 0px 10px 10px 10px ;" id="icerik">
+            <div id="post" class="row border cornFlowerBlue p-3 bosluk ">
+                <div class="col-md-12 border p-3 lightYellow">
+                 <h4 class="txtcenter"> Ahmet Esat Altunsoy</h4>
+                 
+                 <img id="ahmet_foto"  src="Images/AhmetEsatfoto.jpg" alt="Ahmet Esat Altunsoy">                        
+                    <p style=" margin-left: 135px; word-wrap: normal;">
                             Öğrenci - Yazılım Bölümü, Borusan Asım Kocabıyık Mesleki ve Teknik Lisesi
-                        
-                         Ben, Borusan Asım Kocabıyık Mesleki ve Teknik Lisesi Yazılım Bölümü öğrencisi Ahmet Esat. Yazılım geliştirme alanına olan ilgim, her geçen gün daha da artıyor ve bu alanda kendimi geliştirmeye devam ediyorum. Teknolojiye olan tutkum, sadece yazılım dillerini öğrenmekle kalmayıp, yaratıcı projeler üretme hedefiyle ilerlememi sağlıyor.
-                        
-                         Futbolu büyük bir tutkuyla takip ediyor ve Fenerbahçe'yi destekliyorum. Bu spor dalıyla ilgili geniş bir bilgiye sahibim ve futbolu bir hobi olarak izlerken, takım ruhu ve disiplin gibi değerleri hayatımda benimsemeye çalışıyorum.
-                        
-                         Boş zamanlarımda, kitap okumayı ve diziler izlemeyi de severim. Gelecekte, yazılım sektöründe kendimi daha da geliştirmeyi ve aynı zamanda çeşitli alanlarda ilgi duyduğum konuları birleştirerek yenilikçi çözümler üretmeyi hedefliyorum.
-                        
-                        </p>
-                   
-                   
+                            
+                             Ben, Borusan Asım Kocabıyık Mesleki ve Teknik Lisesi Yazılım Bölümü öğrencisi Ahmet Esat. Yazılım geliştirme alanına olan ilgim, her geçen gün daha da artıyor ve bu alanda kendimi geliştirmeye devam ediyorum. Teknolojiye olan tutkum, sadece yazılım dillerini öğrenmekle kalmayıp, yaratıcı projeler üretme hedefiyle ilerlememi sağlıyor.
+                            
+                             Futbolu büyük bir tutkuyla takip ediyor ve Fenerbahçe'yi destekliyorum. Bu spor dalıyla ilgili geniş bir bilgiye sahibim ve futbolu bir hobi olarak izlerken, takım ruhu ve disiplin gibi değerleri hayatımda benimsemeye çalışıyorum.
+                            
+                             Boş zamanlarımda, kitap okumayı ve diziler izlemeyi de severim. Gelecekte, yazılım sektöründe kendimi daha da geliştirmeyi ve aynı zamanda çeşitli alanlarda ilgi duyduğum konuları birleştirerek yenilikçi çözümler üretmeyi hedefliyorum.
+                            
+                    </p>
+               </div>
             </div>
-
+    
+            <div id="post" class="row border cornFlowerBlue p-3 bosluk">
+                <div class="col-md-12 border p-3 lightYellow ">
+                    <h4 class="txtcenter" >Çektiğim Favori Fotoğraflar</h4>    
+                </div>
+           </div>
         </div>
-     </div>
+        
+
+    </div>
 </body>
 </html>
