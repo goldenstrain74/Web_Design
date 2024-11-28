@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="Js/bootstrap.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="Icon" href="Images/favicon.ico">
+    
+    <style>
+        
+        
+        
+   
+
+    #navbar a {
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    #navbaryazi{
+        display: inline-block;
+        margin-left: 15px;
+        
+        font-size: bold;
+    }
+
+    #navbarmedia{
+        display: inline-block;
+        
+        
+
+    }
+
+    #navbarImage{
+        display: inline-block;
+        margin-top: 0px;
+        border-radius: 25%;
+        width: 20px;
+        height: 20px;
+        margin-left: 3px;
+        
+    }
+
+    #navbarImage:hover{
+        outline: red 0.5px solid;
+        border: solid 3px red;
+    }
+
+  
+
+        a:visited{text-decoration: none;color: darkblue;}
+        a{text-decoration: none;color: turquoise;}
+        .black{background-color: rgb(50, 50, 50);color: white;}
+        .white{background-color: white;}
+        .whitesmoke{background-color: whitesmoke;}
+        .aliceBlue{background-color: aliceblue; color: black;}
+        .skyblue{background-color: skyblue;color: darkblue;text-align: center; padding-top: 70px;}
+        .lightYellow{background-color: lightyellow;color: black;}
+        .lightYellow:hover{background-color: lightgoldenrodyellow;}
+        .cornFlowerBlue{background-color: lightblue}
+        .m5{margin: 5px;}
+        .border{border: 3px solid black;border-radius: 15px; }
+        .h40{height: 33px;}
+        .h100{height: 100px;}
+        .h300{height: 300px;}
+        .h250{height: 250px;}
+        .h200{height: 200px;}
+        .bosluk{margin-top: 10px;}
+        .txtcenter{text-align: center;}
+        .txtright{text-align: right;}
+        .txtleft{text-align: left;}
+        .navigationColor{background: linear-gradient(rgb(58, 58, 136),rgb(33, 33, 255),rgb(124, 174, 248));  font-family: "Dancing Script", cursive;   font-optical-sizing: auto;  font-weight: 25px;          font-style: normal; font-weight: 300;}
+        .navigationColor:hover{background: linear-gradient(yellow,orange,tomato,red);  cursor: grab ;  color: black;}
+        .navigationColor a{color: white;}
+        .navigationColor a:visited{color: white;}
+        .navigationColor:hover a{color: white;}
+        .navigationColor:hover a:visited{color: white;}
+        .yellowGreen{background-color: yellowgreen;color: navy;}
+        .hKucukAralik{height: 20px;}
+        .hBuyukAralik{height: 100px;}
+        .aralık{margin-top: 100px;}
+        .block{display: block;}
+        .inlineblock{display: inline-block;}
+        
+    </style>
+</head>
+
+<script>
+
+
+
+   
+    function boslukAyarlama(){
+        setInterval(() => {
+                  
+            genislik= document.body.clientWidth;
+
+   //alert('genişli:'+genislik);
+if(genislik<768){
+
+    document.getElementById('aralik').classList.add('hBuyukAralik');
+    document.getElementById('aralik').classList.remove('hKucukAralik');
+}
+else {
+    document.getElementById('aralik').classList.remove('hBuyukAralik');
+    document.getElementById('aralik').classList.add('hKucukAralik');
+}          
+        }, 1500);
+
+    }
+
+    
+</script>
+
+<body onload="boslukAyarlama()" id="body" class="white">
+
+
+    <div class="container whitesmoke">
+
+                            <!--başlık kısm -->
+
+        <span class="row  skyblue h200">
+            <h1> PAYLAŞTIKÇA </h1>
+            <h5 class="txtleft">İletişim Bilgileri</h5>
+                  
+        </span>
+
+                             <!-- navbar -->
+        <div id="navbar" class="row h40 black inline-block">
+
+
+                <div class="col-md-6">
+
+                    <div class="row">
+                        <div class="col-md-12 "> 
+                            <span  id="navbaryazi">PAYLAŞTIKÇA | Bilgi paylaştıkça çoğalır </span> 
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="row">
+
+                        <div class="col-md-3 inline-block">
+                            <a href="">
+                                <img src="Images/ev.png" id="navbarImage" alt="anasayfa"> Ana Sayfa 
+                            </a>
+                       </div>
+    
+                       <div class="col-md-3 inline-block">
+                            <a href="">
+                              <img src="Images/hakkımda.png" id="navbarImage" alt="hakkımda"> Hakkımda
+                            </a>
+                       </div>
+    
+                        <div class="col-md-3 inline-block">
+                           <a href="">
+                             <img src="Images/yaprak.png" id="navbarImage" alt="resimler">  Galeri
+                           </a>
+                        </div>
+    
+                        <div class="col-md-3 inline-block">
+                            <a href="036iletisim.html">
+                                <img src="Images/iletişim.png" id="navbarImage" alt="iletişim"> İletişim
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                      
+
+
+           
+               
+                   
+
+                
+           
+        </div>
+
+                        <!-- aradaki boşluğu ayarlama çabası -->
+       
+        <div id="aralik" class="row whitesmoke hKucukAralik"></div>
+        <div id="post" class="row  cornFlowerBlue p-3 bosluk ">
+            <div class="col p-3 lightYellow">
+                <a href="https://www.instagram.com/ahmet__esat74/"target="_blank"  >
+                    <img style="float: left; margin-left:25% ; display: block;  " src="Images/ig.jpg"class="border" width="75px" height="75px"  alt=""> 
+                    <h4 class="txtleft " style="margin-top: 20px;margin-left: 20px; float: left;">Instagram: ahmet__esat74</h4> 
+                </a>   
+            </div>
+
+        </div>
+
+        <div id="post" class="row cornFlowerBlue p-3 bosluk hpost">
+            <div class="col p-3 lightYellow">
+                <a href="https://github.com/goldenstrain74" target="_blank" >
+                    <img style="float: left; ; margin-left: 25%; display: block; " src="Images/github.png"class="border" width="75px" height="75px"  alt=""> 
+                    <h4 class="txtleft " style="margin-top: 20px;margin-left: 20px; float: left;">Github: goldenstrain74</h4> 
+                </a>   
+            </div>
+
+        </div>
+
+        <div id="post" class="row cornFlowerBlue p-3 bosluk hpost">
+            <div class="col p-3 lightYellow">
+                <a href="https://tr.linkedin.com/in/ahmet-esat-altunsoy-6074a6335" target="_blank" >
+                  <img style="float: left; margin-left: 25%; display: block; " src="Images/linkedin.png" class="border" width="75px" height="75px"  alt=""> 
+                  <h4 class="txtleft " style="margin-top: 20px;margin-left: 20px; float: left;">LinkedIn: Ahmet Esat Altunsoy</h> 
+                </a>   
+            </div>
+
+        </div>
+        <div id="post" class="row cornFlowerBlue p-3 bosluk hpost">
+            <div class="col p-3 lightYellow">
+                 <a href="mailto:ahmetesataltunsoy@gmail.com" target="_blank" >
+                  <img style="float: left; margin-left: 25%; display: block;  " src="Images/mail.jpg" class="border"  width="75px" height="75px"  alt=""> 
+                  <h4 class="txtleft " style="margin-top: 20px;margin-left: 20px; float: left;">ahmetesataltunsoy@gmail.com</h4>
+                 </a>   
+            </div>
+
+        </div>
+        <span  class="row  yellowGreen txtright ">
+            <div class="col">
+                <p > design and coding by ahmet esat altunsoy</p> 
+            </div>
+            
+        </span>
+    </div>
+</body>
+</html>
