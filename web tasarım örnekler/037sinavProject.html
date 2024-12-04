@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new projectto</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+<style>
+.white{background-color: white;}
+.whitesmoke{background-color: whitesmoke;}
+.hContainer{height: 700px;}
+.navajowhite{background-color: navajowhite;}
+.trnsparan{opacity: 0.8; z-index: 0;}
+.fix{position: fixed;}
+.txtCenter{text-align: center;}
+
+
+#navbarCenter a{
+text-decoration: none;
+color: black;
+}
+
+#navbarCenter :hover{
+    color: white;
+    background-color: navy;
+    display: inline-block;
+    
+  
+}
+#navbarCenter a :hover{
+    color: white;
+  
+}
+
+#btnbaglan{
+    background-color: rgb(65, 65, 255);
+    color: white;
+    border-radius: 5px; ;
+    float: right;
+}
+
+#navbarselect{
+    margin-top: 0px;
+    border: 0cap;
+    background-color: navajowhite;
+    color: black;
+}
+
+#contentText{
+    font-family: sans-serif;
+    font-size: 90px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#contentTopTxt{
+    color: gray;
+}
+</style>
+
+</head>
+<body>
+    <!-- container -->
+     <div class="container hContainer whitesmoke pr-3 pl-3 pb-3" >
+        <!-- navbar -->
+         <div id="navbar" class="row navajowhite p-1 ">
+            <div class="col-md-3">
+                * Esat Altunsoy
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="row">
+                    <div id="navbarCenter" class="col-md-3 p-1">
+                        <a href="">Anasayfa</a>
+                    </div>
+                    
+                    <div id="navbarCenter" class="col-md-3 p-1">
+                        <a href="">Hakkımda</a>
+                    </div>
+    
+                    <div id="navbarCenter" class="col-md-3 p-1">
+                        <a href="">İletişim</a>
+                    </div>
+    
+                    <div id="navbarCenter" class="col-md-3 p-1">
+                        
+                        <select id="navbarselect"> 
+                            <option >
+                               <a href="">Diğer Sayfalar
+                               </a> 
+                            </option>
+                            <option >
+                                <a href="">b</a> 
+                            </option>
+                            <option >
+                               <a href="">c</a>  
+                            </option>
+                            <option >
+                                <a href="">d</a> 
+                            </option>
+    
+                        </select>
+                    </div> 
+                </div>
+             
+                                
+            </div>
+
+            <div class="col-md-3">
+                <button id="btnbaglan">bağlan</button>
+            </div>
+
+         </div>
+
+         <!-- icerik -->
+         <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <span id="contentTopTxt"><p>burda bisi yaziyo ama okuyamadım</p></span>
+                </div>
+
+                <div class="row">
+                    <span id="contentText">GERÇEK <br> POTANSİYELİNİZİ <br> ORTAYA <br> ÇIKARIN</span>
+                </div> 
+
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"><button id="btnbaglan">buton işte</button></div>
+                    <div class="col-md-4"></div>
+                </div>
+                
+                
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div title="bu resmin üstündeki şeyi title olarak yaptım resmin kendisinde olab bir görsel de olabilir" class="col-md-12">
+                        <img src="Images/005indir.jpg" width="100%" height="550px" class="trnsparan" alt="">
+                    </div>
+                </div>
+                <div class="row" id="contentTopTxt" ><p style="text-align: right;">burda da bisiler yazıyo fotoğrafın kalitesine tükürim</p></div>
+                
+            </div>
+         </div>
+     </div>
+    
+
+
+
+</body>
+</html>
