@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esat News !!</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-
+    <script src="Js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+        
+        .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
         
         .white{background-color: white; color: black;}
         .whiteSmoke{background-color: whitesmoke; color: black;}
@@ -39,6 +48,69 @@
         }
         .yuvarlak{border-radius: 50%;}
 
+        .carousel-indicators-numbers li  {
+        
+         text-indent: 0;
+         margin: 0 2px;
+         width: 30px;
+         height: 30px;
+         border: none;
+         border-radius: 100%;
+         line-height: 30px;
+         color: #fff;
+         background-color: #999;
+         transition: all 0.25s ease;
+       /*
+       &.active, &:hover 
+        margin: 0 2px;
+        width: 30px;
+        height: 30px;
+        background-color: #337ab7;        
+       */ 
+        
+
+}
+.carousel-indicators-numbers:active{
+
+margin: 0 2px;
+width: 30px;
+height: 30px;
+background-color: #337ab7;  
+
+}
+
+.carousel-indicators-numbers:active{
+
+margin: 0 2px;
+width: 30px;
+height: 30px;
+background-color: #337ab7;  
+
+}
+
+#slideBtn1{
+    margin-top: 15px;
+    position: fixed;
+    margin-left: 505px;
+    color: white;
+
+}
+#slideBtn2{
+    margin-top: 15px;
+position: fixed;
+margin-left: 525px;
+color: white;
+}
+#slideBtn3{
+    margin-top: 15px;
+position: fixed;
+margin-left: 545px;
+color: white;
+
+flex-direction: column;
+
+}
+.genislikkucult{width: 70px;}
     </style>
 
 </head>
@@ -113,15 +185,67 @@
    
         </div>
 
-        <!-- İçerik kısmı -->
-        <div class="container">
 
-            <!-- slaytın olduğıu kısım-->
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- aşağısında numaralar olan slayt -->
-                </div>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- solboşluk -->
             </div>
+
+            <div class="col-md-6 container">
+        <!-- İçerik kısmı -->
+      
+
+            
+            
+            <div class="row">
+                <!-- içerik slaytı olan kısım-->
+
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+
+                    <div id="carouselExampleCaptions1" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 2"><p id="slideBtn1">1</p> <p id="slideBtn2">2</p> <p id="slideBtn3">3</p> </button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active p-1">
+                            <img src="Images/mezi.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Messi'nin hayatı</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item p-1">
+                            <img src="Images/milan.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Efsane Milan</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item p-1">
+                            <img src="Images/pep.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Guardiola felsefesi</h5>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+
+                </div>
+                <div class="col-md-2"></div>
+
+            </div>
+
+            
+
             <!-- post -->
             <div class="row">
                 <div class="col-md-3 salmon">
@@ -176,9 +300,80 @@
                 </div>
                 
             </div>
-        </div>
+        
 
     </div>
+
+            <div class="col-md-3 ">
+                <!-- kategoriler kısmı -->
+
+
+                <div class="row p-1 pl-3 gainsboro">
+                    Kategoriler
+                </div> 
+
+
+                <div class="row p-1 pl-3">kategori 1</div> 
+                <div class="row p-1 pl-3">kategori 2</div> 
+                <div class="row p-1 pl-3">kategori 3</div> 
+                <div class="row p-1 pl-3">kategori 4</div> 
+
+
+                <div class="row p-2 pt-5">
+
+                    <div class="col-md-2"></div>
+
+                    <div class="col-md-8">
+ <!-- kategoriler slaytı -->
+ <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active p-1">
+        <img src="Images/mezi.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Messi'nin hayatı</h5>
+        </div>
+      </div>
+      <div class="carousel-item p-1">
+        <img src="Images/milan.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Efsane Milan</h5>
+        </div>
+      </div>
+      <div class="carousel-item p-1">
+        <img src="Images/pep.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Guardiola felsefesi</h5>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+   </div>
+
+   <div class="col-md-2">
+
+   </div>
+
+                   
+            </div>
+
+            </div>
+
+        </div>
+
+
     
 </body>
 </html>
